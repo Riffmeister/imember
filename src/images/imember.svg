@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="556 370 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style id="bx-google-fonts">@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,500,700,900,100italic,300italic,400,400italic,500italic,700italic,900italic);</style>
+  </defs>
+  <ellipse cx="627.158" cy="451.456" rx="55.515" ry="55.515" style="fill: rgb(196, 78, 214);"/>
+  <ellipse transform="matrix(1.000005, 0, 0, 0.999999, 171.017181, 172.737566)" cx="434.962" cy="255.254" rx="11.446" ry="14.88"/>
+  <ellipse cx="281.754" cy="244.849" rx="10.874" ry="14.88" transform="matrix(1.000003, 0, 0, 1, 358.270358, 183.141785)"/>
+  <ellipse transform="matrix(1.000007, 0, 0, 1.000005, 176.740433, 233.402326)" cx="428.094" cy="189.437" rx="4.579" ry="6.296" style="fill: rgb(255, 255, 255);"/>
+  <ellipse cx="639.749" cy="421.123" rx="5.151" ry="4.579" style="fill: rgb(255, 255, 255);"/>
+  <ellipse cx="626.585" cy="478.355" rx="27.471" ry="17.17" style="fill: rgb(97, 72, 72);"/>
+  <text x="725.603" y="433.846" style="font-size: 36px; font-family: Roboto; white-space: pre;" transform="matrix(1.564686, 0, 0, 3.214122, -438.348694, -886.890076)">I'Member</text>
+  <path d="M 663.214 432.569 C 663.214 441.727 663.214 444.016 663.214 446.305 C 663.214 447.45 666.648 461.185 666.648 461.185 C 666.648 461.185 666.648 473.776 666.648 473.776" style="stroke: black; fill: none;"/>
+  <path d="M 535.014 268.887 Z" style="stroke: black; fill: none;"/>
+  <path d="M 581.945 436.003 C 587.026 442.732 591.102 454.318 591.102 454.318 C 591.102 455.462 586.523 463.475 586.523 463.475 C 586.523 466.326 584.234 469.198 584.234 469.198" style="stroke: black; fill: none;"/>
+  <path d="M 641.466 406.243 C 644.9 406.243 649.478 408.532 649.478 408.532 C 656.346 414.255 658.635 415.4 658.635 415.4" style="stroke: black; fill: none;"/>
+  <path d="M 612.85 402.809 C 602.187 409.677 596.825 413.111 596.825 413.111 C 595.68 413.111 594.154 413.111 593.391 413.111" style="stroke: black; fill: none;"/>
+  <path d="M 383.922 316.961 Z" style="stroke: black; fill: none;"/>
+</svg>
