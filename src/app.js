@@ -1,10 +1,17 @@
+import { observer } from 'mobx-react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Exercise from './components/exercise';
 import Footer from './footer';
 import Header from './header';
-import React from 'react';
-import Exercise from './components/exercise';
 import Home from './components/home';
-import { observer } from 'mobx-react';
+import LessonBuilder from './components/lessonBuilder';
+import Questions from './components/questions';
+import Support from './components/support'
+import Stats from './components/stats';
+import About from './components/about';
+import Results from './components/results';
+import React from 'react';
+
 require('./app.less')
 
 @observer
@@ -18,11 +25,17 @@ class App extends React.Component {
             <div className='route-wrapper'>
             <Header />
               <div className='body-content'>
-              <Switch>
-                <Route exact path="/" component={Home}/>
-                <Route path="/exercise" component={Exercise}/>
-                <Route render={() => <h1>Page Not Found</h1>}/>
-              </Switch>
+                <Switch>
+                  <Route exact path="/" component={Home}/>
+                  <Route path="/support" component={Support}/>
+                  <Route path="/about" component={About}/>
+                  <Route path="/stats" component={Stats}/>
+                  <Route path="/lesson-builder" component={LessonBuilder} />
+                  <Route path="/exercise" component={Exercise}/>
+                  <Route path="/questions" component={Questions}/>
+                  <Route path="/results" component={Results}/>
+                  <Route render={() => <h1>Page Not Found</h1>}/>
+                </Switch>
               </div>
             </div>
             </Router>

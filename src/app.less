@@ -8,14 +8,15 @@
     height: 100%;
     width: 100%;
     align-items: center;
+    overflow: auto;
   }
+
   div {
     display: flex;
   }
 
   .header {
-    background-color: #2A3132;
-    flex-grow: .1;
+    background-color: #000009;
     max-height: 130px;
     flex-shrink: 0;
     display: flex;
@@ -23,6 +24,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-bottom: 10px;
 
     .title {
       display: flex;
@@ -45,22 +47,21 @@
     .header-content {
       width: 100%;
       justify-content: space-around;
-      padding-bottom: 10px;
 
-      button {
+      .active {
+        color: blue;
+      }
+
+      a {
         color: #B5F44A;
-        font-size: 1.2em;
-        background: #336B87;
+        font-size: 1.5em;
+        background: #a4a4a4;
         cursor: pointer;
-
-        .active {
-          color: red;
-        }
-        
-        a {
-          text-decoration: none;
-          color: #B5F44A;
-        }
+        flex-grow: 1;
+        text-decoration: none;
+        font-weight: 900;
+        text-align: center;
+        border: solid;
 
         &:hover, &:active {
           background: #90AFC5;
@@ -81,6 +82,8 @@
       width: 100%;
       display: flex;
       flex-direction: column;
+      border-right: solid;
+      border-left: solid;
       flex-grow: 1;
       flex-shrink: 0;
       background: #70EE9C;
@@ -92,16 +95,88 @@
         font-size: 2em;
       }
 
-      .exercise {
-        display: flex;
+      h2 {
+        font-size: 2em;
+      }
+
+      .input-section {
         flex-direction: column;
-        flex-grow: 1;
+        font-size: 1.5em;
+        justify-content: space-around;
+        font-weight: bold;
+        align-items: center;
+        width: 100%;
+
+        input {
+          font-size: 1.5em;
+          text-align: center;
+        }
+      }
+
+      .question {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+        .answers {
+          margin-top: 10px;
+          justify-content: space-around;
+          width: 100%;
+
+          .answer {
+            flex-direction: column;
+          }
+        }
+
+        .selected {
+          background-color: blue;
+        }
+
+        button {
+          &:hover, &:active {
+            background-color: yellow;
+          }
+        }
       }
     }
   }
 
-  .footer {
+  .snackbar {
+    z-index: 9999;
+    display: none;
+    display: flex;
+    width: 100%;
     background-color: #2A3132;
     flex-grow: .05;
+    justify-content: center;
+
+    p {
+      color: #B5F44A;
+      font-size: 2em;
+    }
+  }
+
+  .results {
+    flex-grow: 1;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    .topic {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+
+      h3 {
+        border-bottom: solid;
+        width: 100%;
+        text-align: center;
+      }
+      .questions {
+        width: 100%;
+        .question {
+
+        }
+      }
+    }
   }
 }

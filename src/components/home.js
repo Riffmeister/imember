@@ -1,5 +1,7 @@
 import React from 'react';
 
+import globalStore from '../globalStore';
+
 class Home extends React.Component {
   render() {
     return(
@@ -17,7 +19,7 @@ class Home extends React.Component {
     event.preventDefault()
     switch (reason) {
       case 'start':
-        this.props.history.push('/exercise')
+        this.props.history.push('/lesson-builder')
         break;
       default:
         console.log('wrong')

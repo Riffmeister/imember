@@ -11,10 +11,10 @@ class Header extends React.Component {
           <h2>Brain Training for All!</h2>
         </div>
         <div className='header-content'>
-          <button ><NavLink exact activeClassName='active' to="/">Home</NavLink></button>
-          <button><NavLink activeClassName='active' to="/about">About</NavLink></button>
-          <button><NavLink activeClassName='active' to="/stats">Stats</NavLink></button>
-          <button><NavLink activeClassName='active' to="/support">Support</NavLink></button>
+          <NavLink exact activeClassName='active' to="/">Home</NavLink>
+          <NavLink activeClassName='active' to="/about">About</NavLink>
+          <NavLink activeClassName='active' to="/stats">Stats</NavLink>
+          <NavLink activeClassName='active' to="/support">Support</NavLink>
         </div>
       </section>
     )
